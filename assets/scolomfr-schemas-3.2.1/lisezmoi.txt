@@ -1,0 +1,12 @@
+Ce fichier est un élément de l'ensemble des schémas XSD nécessaires à la mise en œuvre de ScoLOMFR 3.2 (mai 2017).
+ScoLOMFR est un profil d'application de LOM et LOMFR.
+
+La version 3.2 des schémas intègre la validation de l'ensemble des vocabulaires définis à cette date, en reprenant les ajouts et les modifications de structure qui ont été effectués dans les versions précédentes (nouveaux éléments, nouveaux formats, évolution de l'architecture XSD, etc.).
+
+Toutes les valeurs de termes ayant été valides dans les schémas et vocabulaires publiés pour ces différentes versions sont valides au sens des schémas ScoLOMFRv3.2.
+
+Les présents schémas XSD présentent une compatibilité ascendante avec les fichiers conformes à ScoLOMFRv2.x. et ScoLOMFRv3.x. À noter que depuis la publication de ScoLOMFRv2.0, le présent package propose aussi un outil de migration permettant de migrer les fichiers LOM, LOMFR et ScoLOMFRv1.x en un format "strict" ScoLOMFRv3.2, dans lequel tous les éléments liés à des vocabulaires sont désormais identifiés par leurs URI de concepts.
+
+NB : Un système de dépréciation des valeurs anciennes/obsolètes/inexactes d'une version à l'autre de ScoLOMFR ayant été mis en place en date de la version 3.1 des fichiers (décembre 2016), se reporter au fichier conceptsDeprecies.xml de la version en cours des fichiers ScoLOMFR.
+
+L'ensemble des vocabulaires, de la documentation et des éléments de cycle de vie de ScoLOMFR sont publiés sur le site https://www.reseau-canope.fr/scolomfr/.

@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<xs:schema xmlns="http://www.lom-fr.fr/xsd/SCOLOMFR/vocab" xmlns:lomfr="http://www.lom-fr.fr/xsd/LOMFR" xmlns:scolomfr="http://www.lom-fr.fr/xsd/SCOLOMFR" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.lom-fr.fr/xsd/SCOLOMFR/vocab" elementFormDefault="qualified" version="SCOLOMFR v1.1 10/2011">
+  <xs:annotation>
+	<xs:documentation>
+		Licence
+		Ce travail est placé sous licence Creative commons Attribution Partage à l'Identique 3.0 France.
+		Pour plus d'information, consulter le fichier "licence_scolomfr.txt" à la racine de ce package, ou le site http://creativecommons.org/licenses/by-sa/3.0/fr/
+	</xs:documentation>
+    <xs:documentation>
+	  Copyright
+      ScoLOMFRv3.2, schémas XSD (avril 2017)
+      © 2017 Direction du Numérique pour l’Éducation - Ministère de l'Éducation nationale, de l'enseignement supérieur et de la Recherche / Réseau Canopé
+	</xs:documentation>
+	<xs:documentation>
+	 Nature
+		Ce fichier est un élément de l'ensemble des schémas XSD nécessaires à la mise en œuvre de ScoLOMFR 3.2 (avril 2017).
+		ScoLOMFR est un profil d'application de LOM et LOMFR.
+		
+		La version 3.2 des schémas intègre la validation de l'ensemble des vocabulaires définis à cette date, en reprenant les ajouts et les modifications de structure qui ont été effectués dans les versions précédentes (nouveaux éléments, nouveaux formats, évolution de l'architecture XSD, etc.).
+		
+		Toutes les valeurs de termes ayant été valides dans les schémas et vocabulaires publiés pour ces différentes versions sont valides au sens des schémas ScoLOMFRv3.2.
+		
+		Les présents schémas XSD présentent une compatibilité ascendante avec les fichiers conformes à ScoLOMFRv2.x. et ScoLOMFRv3.x. À noter que depuis la publication de ScoLOMFRv2.0, le présent package propose aussi un outil de migration permettant de migrer les fichiers LOM, LOMFR et ScoLOMFRv1.x en un format "strict" ScoLOMFRv3.2, dans lequel tous les éléments liés à des vocabulaires sont désormais identifiés par leurs URI de concepts.
+		
+		NB : Un système de dépréciation des valeurs anciennes/obsolètes/inexactes d'une version à l'autre de ScoLOMFR ayant été mis en place en date de la version 3.1 des fichiers (décembre 2016), se reporter au fichier conceptsDeprecies.xml de la version en cours des fichiers ScoLOMFR.
+		
+		L'ensemble des vocabulaires, de la documentation et des éléments de cycle de vie de ScoLOMFR sont publiés sur le site https://www.reseau-canope.fr/scolomfr/.
+	  </xs:documentation>
+	  <xs:documentation>
+	    Ce composant est appelé par scolomfrCustom.xsd (import)
+		Il définit les types simples pour les extensions scolomfr : generalResourceType, place, educationalMethod, tool.
+	  </xs:documentation>
+
+      <xs:documentation>
+        14/01/2016 - Adaptations ScoLOMFRv2.0 : ajout du vocabulaire (044) pour l'élément 4.3.1.3 personalDataProcessType
+      </xs:documentation>
+</xs:annotation>
+
+  <xs:import namespace="http://www.lom-fr.fr/xsd/SCOLOMFR"/>
+  <!-- generalResourceTypeValues -->
+  <xs:simpleType name="generalResourceType">
+    <xs:union memberTypes="scolomfr:generalResourceTypeValues"/>
+  </xs:simpleType>
+  <!-- extension 4.3.1.3 personalDataProcessTypeValues-->
+  <xs:simpleType name="personalDataProcessType">
+    <xs:union memberTypes="scolomfr:personalDataProcessTypeValues"/>
+  </xs:simpleType>
+  <!-- placeValues -->
+  <xs:simpleType name="place">
+    <xs:union memberTypes="scolomfr:placeValues"/>
+  </xs:simpleType>
+  <!-- educationalMethod -->
+  <xs:simpleType name="educationalMethod">
+    <xs:union memberTypes="scolomfr:educationalMethodValues"/>
+  </xs:simpleType>
+  <!-- tool -->
+  <xs:simpleType name="tool">
+    <xs:union memberTypes="scolomfr:toolValues"/>
+  </xs:simpleType>
+</xs:schema>

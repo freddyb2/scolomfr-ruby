@@ -1,0 +1,203 @@
+<?xml version="1.0"?>
+<xs:schema xmlns="http://www.lom-fr.fr/xsd/SCOLOMFR" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.lom-fr.fr/xsd/SCOLOMFR" elementFormDefault="qualified">
+  <xs:annotation>
+	<xs:documentation>
+		Licence
+		Ce travail est placé sous licence Creative commons Attribution Partage à l'Identique 3.0 France.
+		Pour plus d'information, consulter le fichier "licence_scolomfr.txt" à la racine de ce package, ou le site http://creativecommons.org/licenses/by-sa/3.0/fr/
+	</xs:documentation>
+    <xs:documentation>
+	  Copyright
+      ScoLOMFRv3.2, schémas XSD (avril 2017)
+      © 2017 Direction du Numérique pour l’Éducation - Ministère de l'Éducation nationale, de l'enseignement supérieur et de la Recherche / Réseau Canopé
+	</xs:documentation>
+	<xs:documentation>
+	  Nature
+		Ce fichier est un élément de l'ensemble des schémas XSD nécessaires à la mise en œuvre de ScoLOMFR 3.2 (avril 2017).
+		ScoLOMFR est un profil d'application de LOM et LOMFR.
+		
+		La version 3.2 des schémas intègre la validation de l'ensemble des vocabulaires définis à cette date, en reprenant les ajouts et les modifications de structure qui ont été effectués dans les versions précédentes (nouveaux éléments, nouveaux formats, évolution de l'architecture XSD, etc.).
+		
+		Toutes les valeurs de termes ayant été valides dans les schémas et vocabulaires publiés pour ces différentes versions sont valides au sens des schémas ScoLOMFRv3.2.
+		
+		Les présents schémas XSD présentent une compatibilité ascendante avec les fichiers conformes à ScoLOMFRv2.x. et ScoLOMFRv3.x. À noter que depuis la publication de ScoLOMFRv2.0, le présent package propose aussi un outil de migration permettant de migrer les fichiers LOM, LOMFR et ScoLOMFRv1.x en un format "strict" ScoLOMFRv3.2, dans lequel tous les éléments liés à des vocabulaires sont désormais identifiés par leurs URI de concepts.
+		
+		NB : Un système de dépréciation des valeurs anciennes/obsolètes/inexactes d'une version à l'autre de ScoLOMFR ayant été mis en place en date de la version 3.1 des fichiers (décembre 2016), se reporter au fichier conceptsDeprecies.xml de la version en cours des fichiers ScoLOMFR.
+		
+		L'ensemble des vocabulaires, de la documentation et des éléments de cycle de vie de ScoLOMFR sont publiés sur le site https://www.reseau-canope.fr/scolomfr/.
+	  </xs:documentation>
+	  <xs:documentation>
+	    Ce composant est appelé par scolomfrCustom.xsd (include)
+		Ce fichier associe les valeurs possibles des différents vocabulaires avec les fichiers corresponsants du répertoire scolomfr/vocab.
+		Les  fichiers de scolomfr/vocab  énumèrent, pour chaque vocabulaire, les valeurs valides du champ correspondant.
+		Afin de pouvoir valider toutes notices réalisées antérieurement, cet ensemble de schémas XSD ScoLOMFRv3.2  définit un format dit "ScoLOMFRv3.2_lax", qui permet l'utilisation de toutes les valeurs ayant été utilisées dans les versions antérieures LOM, LOMFR, ScoLOMFRv1.x.
+		Les valeurs valides au sens des schémas ScoLOMFRv3.2 comportent :
+		- les URI nominaux des concepts du vocabulaire
+		- tous les ID ayant été utilisés dans une des versions antérieurement publiées
+		- dans un souci de compatibilité maximale, il comporte également tous les libellés correspondants.
+		Il est vivement conseillé de procéder à la migration des anciens fichiers, afin que les éléments relevant de vocabulaires contrôlés portent tous des identifiants URI nominaux des concepts. Ce format, dit "Scolomfrv3.2_strict", est rendu obligatoire depuis la version 3.0.
+	  </xs:documentation>
+
+      <xs:documentation>
+          14/01/2016 - Adaptations ScoLOMFRv2.0 : inclusion des valeurs de vocabulaires situés dans le dossier scolomfr/vocab
+      </xs:documentation>
+   </xs:annotation>
+
+  <!-- Import de tous les vocabulaires -->
+  <xs:include schemaLocation="vocab/SourceValues.xsd"/>
+
+  <xs:include schemaLocation="vocab/voc_001.xsd"/>
+  <xs:include schemaLocation="vocab/voc_002.xsd"/>
+  <xs:include schemaLocation="vocab/voc_003.xsd"/>
+  <xs:include schemaLocation="vocab/voc_004.xsd"/>
+  <xs:include schemaLocation="vocab/voc_005.xsd"/>
+  <xs:include schemaLocation="vocab/voc_006.xsd"/>
+  <xs:include schemaLocation="vocab/voc_007.xsd"/>
+  <xs:include schemaLocation="vocab/voc_008.xsd"/>
+  <xs:include schemaLocation="vocab/voc_009.xsd"/>
+  <xs:include schemaLocation="vocab/voc_010.xsd"/>
+  <xs:include schemaLocation="vocab/voc_011.xsd"/>
+  <xs:include schemaLocation="vocab/voc_012.xsd"/>
+  <xs:include schemaLocation="vocab/voc_013.xsd"/>
+  <xs:include schemaLocation="vocab/voc_014.xsd"/>
+  <xs:include schemaLocation="vocab/voc_015.xsd"/>
+  <xs:include schemaLocation="vocab/voc_016.xsd"/>
+  <xs:include schemaLocation="vocab/voc_017.xsd"/>
+  <xs:include schemaLocation="vocab/voc_018.xsd"/>
+  <xs:include schemaLocation="vocab/voc_019.xsd"/>
+  <xs:include schemaLocation="vocab/voc_020.xsd"/>
+  <xs:include schemaLocation="vocab/voc_021.xsd"/>
+  <xs:include schemaLocation="vocab/voc_022.xsd"/>
+  <xs:include schemaLocation="vocab/voc_023.xsd"/>
+  <xs:include schemaLocation="vocab/voc_024.xsd"/>
+  <xs:include schemaLocation="vocab/voc_025.xsd"/>
+  <xs:include schemaLocation="vocab/voc_026.xsd"/>
+  <xs:include schemaLocation="vocab/voc_027.xsd"/>
+  <xs:include schemaLocation="vocab/voc_028.xsd"/>
+  <xs:include schemaLocation="vocab/voc_029.xsd"/>
+  <xs:include schemaLocation="vocab/voc_031.xsd"/>
+  <xs:include schemaLocation="vocab/voc_035.xsd"/>
+  <xs:include schemaLocation="vocab/voc_036.xsd"/>
+  <xs:include schemaLocation="vocab/voc_037.xsd"/>
+  <xs:include schemaLocation="vocab/voc_040.xsd"/>
+  <xs:include schemaLocation="vocab/voc_041.xsd"/>
+  <xs:include schemaLocation="vocab/voc_042.xsd"/>
+  <xs:include schemaLocation="vocab/voc_043.xsd"/>
+  <xs:include schemaLocation="vocab/voc_044.xsd"/>
+  <xs:include schemaLocation="vocab/voc_045.xsd"/>
+  <xs:include schemaLocation="vocab/voc_046.xsd"/>
+
+  <!-- Source -->
+  <xs:simpleType name="sourceValues">
+    <xs:union memberTypes="sourceValuesList"/>
+  </xs:simpleType>
+  <!-- 1.7 Structure -->
+  <xs:simpleType name="structureValues">
+    <xs:union memberTypes="voc007Values"/>
+  </xs:simpleType>
+  <!-- 1.8 Aggregation Level -->
+  <xs:simpleType name="aggregationLevelValues">
+    <xs:union memberTypes="voc008Values"/>
+  </xs:simpleType>
+  <!-- 1.9 Document type -->
+  <xs:simpleType name="documentTypeValues">
+    <xs:union memberTypes="voc004Values"/>
+  </xs:simpleType>
+  <!-- 1.10 GeneralResourceType -->
+  <xs:simpleType name="generalResourceTypeValues">
+    <xs:union memberTypes="voc005Values"/>
+  </xs:simpleType>
+  <!-- 2.2 Status -->
+  <xs:simpleType name="statusValues">
+    <xs:union memberTypes="voc002Values"/>
+  </xs:simpleType>
+  <!-- 2.3.1 Role -->
+  <xs:simpleType name="roleValues">
+    <xs:union memberTypes="voc003Values"/>
+  </xs:simpleType>
+  <!-- 3.2.1 Role -->
+  <xs:simpleType name="roleMetaValues">
+    <xs:union memberTypes="voc013Values"/>
+  </xs:simpleType>
+  <!-- 4.1 format -->
+  <xs:simpleType name="formatValues">
+    <xs:union memberTypes="voc006Values"/>
+  </xs:simpleType>
+
+  <!-- 4.3.1.3 personalDataProcessType-->
+  <xs:simpleType name="personalDataProcessTypeValues">
+    <xs:union memberTypes="voc044Values"/>
+  </xs:simpleType>
+
+  <!-- 4.4.1.1 Type -->
+  <xs:simpleType name="typeValues">
+    <xs:union memberTypes="voc023Values"/>
+  </xs:simpleType>
+  <!-- 4.4.1.2 Name -->
+  <xs:simpleType name="nameValues">
+    <xs:union memberTypes="voc024Values"/>
+  </xs:simpleType>
+  <!-- 5.1 Interactivity Type -->
+  <!-- Non utilisé en ScoLOMFR -->
+  <xs:simpleType name="interactivityTypeValues">
+    <xs:restriction base="xs:token"/>
+  </xs:simpleType>
+  <!-- 5.2 Learning Resource Type -->
+  <xs:simpleType name="learningResourceTypeValues">
+    <xs:union memberTypes="voc010Values"/>
+  </xs:simpleType>
+  <!-- 5.3 Interactivity Level -->
+  <!-- Non utilisé en ScoLOMFR -->
+  <xs:simpleType name="interactivityLevelValues">
+    <xs:restriction base="xs:token"/>
+  </xs:simpleType>
+  <!-- 5.4 Semantic Density -->
+  <!-- Non utilisé en ScoLOMFR -->
+  <xs:simpleType name="semanticDensityValues">
+    <xs:restriction base="xs:token"/>
+  </xs:simpleType>
+  <!-- 5.5 Intended End User Role -->
+  <xs:simpleType name="intendedEndUserRoleValues">
+    <xs:union memberTypes="voc011Values"/>
+  </xs:simpleType>
+  <!-- 5.6 Context -->
+  <xs:simpleType name="contextValues">
+    <xs:union memberTypes="voc012Values"/>
+  </xs:simpleType>
+  <!-- 5.8 Difficulty -->
+  <xs:simpleType name="difficultyValues">
+    <xs:union memberTypes="voc025Values"/>
+  </xs:simpleType>
+  <!-- 5.12 Activity -->
+  <xs:simpleType name="activityValues">
+    <xs:union memberTypes="voc019Values"/>
+  </xs:simpleType>
+  <!-- 5.14 Place -->
+  <xs:simpleType name="placeValues">
+    <xs:union memberTypes="voc017Values"/>
+  </xs:simpleType>
+  <!-- 5.15 educationalMethod -->
+  <xs:simpleType name="educationalMethodValues">
+    <xs:union memberTypes="voc018Values"/>
+  </xs:simpleType>
+  <!-- 5.16 tool -->
+  <xs:simpleType name="toolValues">
+    <xs:union memberTypes="voc020Values"/>
+  </xs:simpleType>
+  <!-- 6.1 Cost -->
+  <xs:simpleType name="costValues">
+    <xs:union memberTypes="voc026Values"/>
+  </xs:simpleType>
+  <!-- 6.2 Copyright and Other Restrictions -->
+  <xs:simpleType name="copyrightAndOtherRestrictionsValues">
+    <xs:union memberTypes="voc027Values"/>
+  </xs:simpleType>
+  <!-- 7.1 Kind -->
+  <xs:simpleType name="kindValues">
+    <xs:union memberTypes="voc009Values"/>
+  </xs:simpleType>
+  <!-- 9.1 Purpose -->
+  <xs:simpleType name="purposeValues">
+    <xs:union memberTypes="voc028Values"/>
+  </xs:simpleType>
+</xs:schema>
