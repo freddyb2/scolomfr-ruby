@@ -2,7 +2,7 @@ require 'nokogiri'
 
 class Scolomfr
   class << self
-    def is_scolomfr_notice_valid?(filepath)
+    def is_notice_valid?(filepath)
       schema_validation_errors(filepath).empty?
     end
 
