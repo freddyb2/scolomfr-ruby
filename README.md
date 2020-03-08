@@ -16,7 +16,7 @@ Scolomfr.is_notice_valid?('path/to/your/xml/file')
 
 ## Sources
 
-### XSD schema
+### XSD schema and notice of reference manual
 
 https://www.reseau-canope.fr/scolomfr/fileadmin/user_upload/archives/ScoLOMFR_V3-2/scolomfr-xsd-3-2-1.zip
 
